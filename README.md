@@ -72,10 +72,10 @@ All models were tuned using `GridSearchCV` with 3–5 fold cross-validation.
 
 ## 📊 Results
 
-### Models Accuracy Before Scalling Data
+### Before Fine-Tuning (Baseline Models)
 ![P](https://github.com/MAHFUZATUL-BUSHRA/Fake-News-Vs-Real-News-Detection-using-Python/blob/main/images/Before%20Scalling.png)
 
-### After Fine tuning Models 
+### After Fine-Tuning (GridSearchCV Tuned)
 ![p](https://github.com/MAHFUZATUL-BUSHRA/Fake-News-Vs-Real-News-Detection-using-Python/blob/main/images/after%20fine%20tuning.png)
 
 ### Tuned Models Comparison
@@ -83,6 +83,17 @@ All models were tuned using `GridSearchCV` with 3–5 fold cross-validation.
 
 ### ROC Curve Comparison
 ![p](https://github.com/MAHFUZATUL-BUSHRA/Fake-News-Vs-Real-News-Detection-using-Python/blob/main/images/ROC%20curve%20comparison.png)
+
+---
+
+## 🔍 Key Observations
+
+- SVM achieved the highest baseline accuracy (94.08%) before hyperparameter tuning, making it the strongest out-of-the-box model.
+- After fine-tuning, XGBoost and SVM tied at 93.69%, showing that tuning helped XGBoost close the gap significantly.
+- Logistic Regression and SVM both scored AUC = 0.99, indicating excellent ability to distinguish fake from real news across all classification thresholds.
+- Naive Bayes saw the largest accuracy drop after tuning (93% → 84%), suggesting it is more sensitive to hyperparameter changes and may not generalize as well on this dataset.
+- All models achieved AUC ≥ 0.97, confirming that the TF-IDF feature representation captures strong discriminative signals across every classifier.
+- The ROC curves cluster tightly near the top-left corner, indicating that all models perform well above random chance with very low false positive rates.
 
 ---
 
