@@ -1,6 +1,4 @@
-# Fake-News-Vs-Real-News-Detection-using-Python
-
-## 📰 Fake vs Real News Classifier
+# 📰 Fake-News-Vs-Real-News-Detection-using-Python
 
 A machine learning project that detects fake news using Natural Language Processing (NLP) and multiple classification algorithms trained on labeled news article data.
 
@@ -36,7 +34,9 @@ This project builds and compares several ML models to classify news articles as 
 
 ### 1. Exploratory Data Analysis (EDA)
 - Label distribution plot (Fake vs Real)
+  ![p](https://github.com/MAHFUZATUL-BUSHRA/Fake-News-Vs-Real-News-Detection-using-Python/blob/main/images/feke%20vs%20real%20news.png)
 - Text length distribution histogram
+  ![p](https://github.com/MAHFUZATUL-BUSHRA/Fake-News-Vs-Real-News-Detection-using-Python/blob/main/images/text%20length%20distribution.png)
 - Top 20 most frequent words in fake vs real news
 
 ### 2. Text Preprocessing
@@ -72,7 +72,17 @@ All models were tuned using `GridSearchCV` with 3–5 fold cross-validation.
 
 ## 📊 Results
 
+### Models Accuracy Before Scalling Data
+![P](https://github.com/MAHFUZATUL-BUSHRA/Fake-News-Vs-Real-News-Detection-using-Python/blob/main/images/Before%20Scalling.png)
 
+### After Fine tuning Models 
+![p](https://github.com/MAHFUZATUL-BUSHRA/Fake-News-Vs-Real-News-Detection-using-Python/blob/main/images/after%20fine%20tuning.png)
+
+### Tuned Models Comparison
+![p](https://github.com/MAHFUZATUL-BUSHRA/Fake-News-Vs-Real-News-Detection-using-Python/blob/main/images/model%20comparison.png)
+
+### ROC Curve Comparison
+![p](https://github.com/MAHFUZATUL-BUSHRA/Fake-News-Vs-Real-News-Detection-using-Python/blob/main/images/ROC%20curve%20comparison.png)
 
 ---
 
